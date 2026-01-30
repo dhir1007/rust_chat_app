@@ -1,0 +1,18 @@
+[package]
+name = "rust_chat_app"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+# Async runtime: Ye hamara engine hai 🚀
+tokio = { version = "1", features = ["full"] }
+
+# WebSockets: Real-time communication ke liye 🔌
+tokio-tungstenite = "0.21"
+
+# Serialization: Data ko JSON mein convert karne ke liye 📦
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+# Futures: Async streams handle karne ke liye 🌊
+futures-util = "0.3"
